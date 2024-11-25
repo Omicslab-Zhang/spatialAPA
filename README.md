@@ -12,11 +12,13 @@ SCAPE (https://github.com/LuChenLab/SCAPE) should be pre-installed before using 
 Other dependancy of environment for running pipeline of spatialAPAdb are list in environment.yml file.
 
 ## Usage
+```
 $git clone https://github.com/Omicslab-Zhang/spatialAPA.git
 $cd spatialAPA
 $conda env create -f environment.yml
 $snakemake -s /path/to /spatialAPA/snakefile/run_scape.pipeline.py \
   -j 80 -k --scheduler greedy --rerun-incomplete > /path/to/log/file/spatialAPA.log 2>&1
+```
 
 ## Parameters
 -	**-s /path/to/spatialAPA/snakefile/run_scape.pipeline.py:**  
