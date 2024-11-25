@@ -1,0 +1,22 @@
+
+
+IN_PATH: "/public/home/jiangzh/projects/sc_apa/database/SCAPE_res"
+bed_file: "/public/home/jiangzh/projects/sc_apa/GRCh38_utr.bed"
+scape_path: "/public/home/jiangzh/biosoft/SCAPE"
+gse_gsm_list: "/public/home/jiangzh/projects/sc_apa/gse_gsm.txt"
+scape_preprocess_1: "/public/home/jiangzh/projects/sc_apa/database/spatialAPA_Annot.r"
+scape_preprocess_2: "/public/home/jiangzh/projects/sc_apa/database/spatialAPA_APA.r"
+scape_calculate_len: "/public/home/jiangzh/projects/sc_apa/spatialAPA_WUL.py"
+scape_rule: "/public/home/jiangzh/projects/sc_apa/run_scape.rule.py"
+stop_codon_file: "/public/home/jiangzh/projects/sc_apa/GRCh38.v44.stop_codon.tsv"
+REF_APP: "/public/home/jiangzh/resource/hg38_gencodev44"
+SLIDE: "--unknown-slide visium-1"
+CORE: 128
+MEM: 64
+
+#### specified sample name and image path
+samples:
+  - GSM: sample1
+    image: "/path/to/image1.png"
+    darkimage: null
+    loupe: null
