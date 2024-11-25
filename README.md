@@ -36,7 +36,7 @@ Utilizes the greedy scheduling algorithm to maximize resource utilization during
 Ensures that any interrupted or partially completed jobs from previous runs are rerun to achieve a fully complete workflow.
 - **/path/to/log/file/spatialAPA.log 2>&1:**  
 Redirects both standard output and error messages from the pipeline execution to a specified log file for debugging and progress tracking. Replace /path/to/log/file/spatialAPA.log with the desired file path for your log file.
-The SCAPE tool should be pre-installed before using this pipeline. Other dependancy of environment for running pipeline of spatialAPAdb are list in environment.yml file.
+The [SCAPE](https://github.com/LuChenLab/SCAPE) tool should be pre-installed before using this pipeline. Other dependancy of environment for running pipeline of spatialAPAdb are list in environment.yml file.
 For additional options and detailed instructions, refer to the [Snakemake documentation](https://snakemake.readthedocs.io/en/v7.32.4/) or the pipeline's user guide.
 
 ## Further Information
