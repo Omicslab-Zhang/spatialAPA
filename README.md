@@ -2,7 +2,9 @@
 SpatialAPAdb ((http://www.biomedical-web.com/spatialAPAdb/home)) is a comprehensive atlas for exploring the spatial diversity and dynamics of alternative polyadenylation across across 18 human tissue organs and 76 disease states. SpatialAPAdb aims to explore the spatial diversity and dynamics of alternative polyadenylation (APA), polyA site index (PSI), weighted 3'-UTR length (WUL), and genes through analysis of 363 human spatial transcriptomics datasets from 56 projects, totaling 804,276 spots.
 
 ![image](https://github.com/Omicslab-Zhang/spatialAPA/blob/main/STAPADB_flow.drawio.png)  
-Figure 1. Workflow of spatialAPAdb.
+<p align="center">
+  <strong>Figure 1. Workflow of spatialAPAdb.</strong>
+</p>
 
 # Source code of spatialAPAdb data processing.
 We ingetrage gene expression matrix, APA expressiong matrix, PSI matrix and weighted 3'UTR length matrix for spatial transcriptome data (10x visium platform) using snakemake.
