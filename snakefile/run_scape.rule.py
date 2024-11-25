@@ -1,5 +1,33 @@
 
 
+rule spaceranger_count:
+    input:
+        fastqs=config['IN_PATH'] + "/{GSE}/{GSM}/"
+        image=lambda wildcards: wildcards.get("image", None),
+        darkimage=lambda wildcards: wildcards.get("darkimage", None),
+        loupe=lambda wildcards: wildcards.get("loupe", None),
+    output:
+        bam = config['IN_PATH'] + "/{GSE}/{GSM}/possorted_genome_bam.bam"
+    params:
+        transcriptome=config['REF_APP'],
+        slide=config['SLIDE'],
+        localcores=config['CORE'],
+        localmem=config['MEM'],
+    shell:
+        """
+        spaceranger count \
+            --id={wildcards.GSM} \
+            --fastqs={input.fastqs} \
+            --sample={wildcards.GSM} \
+            --transcriptome={params.transcriptome} \
+            --localcores={params.localcores} \
+            --localmem={params.localmem} \
+            {params.slide} \
+            {f"--image {input.image}" if input.image else ""} \
+            {f"--darkimage {input.darkimage}" if input.darkimage else ""} \
+            {f"--loupe-alignment {input.loupe}" if input.loupe else ""}
+        """
+
 # Snakefile
 
 rule scape_apa:

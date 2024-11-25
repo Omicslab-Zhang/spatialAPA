@@ -35,8 +35,10 @@ flattened_gse_gsm = [(gse, gsm) for gse in new_dict.keys() for gsm in new_dict[g
 
 rule all:
     input:
+        expand(IN_PATH + "/{GSE}/{GSM}/possorted_genome_bam.bam", zip, GSE=[gse for gse, gsm in flattened_gse_gsm], GSM=[gsm for gse, gsm in flattened_gse_gsm]),
         expand(IN_PATH + "/{GSE}/{GSM}/pasite.csv.gz", zip, GSE=[gse for gse, gsm in flattened_gse_gsm], GSM=[gsm for gse, gsm in flattened_gse_gsm]),
         expand(IN_PATH + "/{GSE}/{GSM}/collapse_pa.tsv.gz", zip, GSE=[gse for gse, gsm in flattened_gse_gsm], GSM=[gsm for gse, gsm in flattened_gse_gsm]),
         expand(IN_PATH + "/{GSE}/{GSM}/finish_step3.txt", zip, GSE=[gse for gse, gsm in flattened_gse_gsm], GSM=[gsm for gse, gsm in flattened_gse_gsm]),
         expand(IN_PATH + "/{GSE}/{GSM}/gene_apa_length_mtx.csv", zip, GSE=[gse for gse, gsm in flattened_gse_gsm], GSM=[gsm for gse, gsm in flattened_gse_gsm]),
         expand(IN_PATH + "/{GSE}/{GSM}/finish_final.txt", zip, GSE=[gse for gse, gsm in flattened_gse_gsm], GSM=[gsm for gse, gsm in flattened_gse_gsm]),
+
