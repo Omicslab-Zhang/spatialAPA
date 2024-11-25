@@ -46,7 +46,7 @@ The output of spatialAPA including gene expression/APA/PSI/WUL matrix are integr
 
 ## Further Information
 To customize or debug the pipeline:
-Modify config.yaml to set appropriate paths, parameters, and sample-specific details.
-Check Snakemake's official documentation for advanced options and troubleshooting.
-Ensure necessary dependencies and paths are set correctly, as defined in the run_scape.pipeline.py.
-For more help, inspect specific rules or contact the pipeline maintainer.
+- Modify config.yaml to set appropriate paths, parameters, and sample-specific details.
+- Check Snakemake's official documentation for advanced options and troubleshooting.
+- Ensure necessary dependencies and paths are set correctly, as defined in the run_scape.pipeline.py.
+- For more help, inspect specific rules or contact the pipeline maintainer.
