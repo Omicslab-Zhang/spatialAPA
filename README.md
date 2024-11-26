@@ -15,7 +15,7 @@ Using the spatialAPA pipeline, we constructed a comprehensive spatially resolved
 </div>
 
 ## Usage of the spatialAPA pipeline
-The [spaceranger](https://www.10xgenomics.com/cn/support/software/space-ranger/latest) and [SCAPE](https://github.com/LuChenLab/SCAPE) tool should be pre-installed before using this pipeline. Other dependancy of environment for running pipeline of spatialAPAdb are list in environment.yml file.
+The [spaceranger](https://www.10xgenomics.com/cn/support/software/space-ranger/latest) and [SCAPE](https://github.com/LuChenLab/SCAPE) tool should be pre-installed before using this pipeline. Other dependancy of environment for running pipeline of spatialAPAdb are list in environment.yml file. In this case, we downloaded two samples from GSE144239(GSM4565823,GSM4565824) and their attachment image file from [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144239).
 ```
 git clone https://github.com/Omicslab-Zhang/spatialAPA.git
 
