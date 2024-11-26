@@ -1,0 +1,28 @@
+name: scape_2
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+  - r
+dependencies:
+  - pandas=2.2.2=py312h1d6d2e6_1
+  - r-reticulate=1.36.1=r43ha18555a_0
+  - r-matrix=1.6_5=r43h316c678_0
+  - r-seurat=5.0.1=r43ha503ecb_0
+  - r-magrittr=2.0.3=r43h57805ef_2
+  - r-patchwork=1.2.0=r43hc72bb7e_0
+  - r-ggplot2=3.5.1=r43hc72bb7e_0
+  - r-dplyr=1.1.4=r43ha503ecb_0
+  - r-reshape2=1.4.4=r43ha503ecb_3
+  - r-tibble=3.2.1=r43h57805ef_2
+  - r-sceasy=0.0.7=r43hdfd78af_2
+  - r-gridextra=2.3=r43hc72bb7e_1005
+  - r-rcolorbrewer=1.1_3=r43h785f33e_2
+  - bioconductor-org.hs.eg.db=3.18.0=r43hdfd78af_0
+  - bioconductor-rhdf5=2.46.1=r43hf17093f_1
+  - bioconductor-singlecellexperiment=1.24.0=r43hdfd78af_0
+  - bioconductor-complexheatmap=2.18.0=r43hdfd78af_0
+  - bioconductor-clusterprofiler=4.10.0=r43hdfd78af_0
+  - pip:
+      - pysam==0.22.1
+prefix: /public/home/jiangzh/miniconda3/envs/scape_2
