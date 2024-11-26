@@ -11,7 +11,7 @@ Using the spatialAPA pipeline, we constructed a comprehensive spatially resolved
 
 <div align="center">
   <img src="https://github.com/Omicslab-Zhang/spatialAPA/blob/main/image/spatialAPA.png" alt="Figure 1. Workflow of spatialAPAdb">
-  <p><strong>Figure 1. Workflow of spatialAPAdb.</strong></p>
+  <p><strong>Figure 1. Workflow of spatialAPA.</strong></p>
 </div>
 
 ## Usage of the spatialAPA pipeline
