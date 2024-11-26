@@ -10,16 +10,19 @@ bed_file: "/path/to/GRCh38_utr.bed"
 scape_path: "/path/to/SCAPE"
 #### path to project-sample file containing two columns sep by tab(project samplename)
 gse_gsm_list: "/path/to/gse_gsm.txt"
-#scape_preprocess_1: "/public/home/jiangzh/projects/sc_apa/database/scape_preprocess_annot_apa.r"
-#scape_preprocess_2: "/public/home/jiangzh/projects/sc_apa/database/scape_preprocess_add.r"
-#scape_calculate_len: "/public/home/jiangzh/projects/sc_apa/calculate_apa_new.py"
-#scape_rule: "/public/home/jiangzh/projects/sc_apa/run_scape.rule.py"
+#### file of stop codon for calculating WUL
 stop_codon_file: "/path/to/GRCh38.v44.stop_codon.tsv"
+#### gtf file path
 gtf_file: "/path/to/GRCh38.gtf"
+#### file containing ENSG (rowname) and gene symbol ("Symbol" column)
 ensg_symbol: "/path/to/ensg_symbol_type.txt"
+#### index path for spaceranger
 REF_APP: "/path/to/hg38_gencodev44"
+#### slide serial number (see spaceranger params)
 SLIDE: "--unknown-slide visium-1"
-CORE: 128
+#### CPU core used for running spaceranger (default 64 CPU cores)
+CORE: 64
+#### memory used for running spaceranger (default 64G)
 MEM: 64
 
 #### specified sample name and image path
