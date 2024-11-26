@@ -1,1 +1,30 @@
 
+
+#### path of spatialAPA 
+spatialAPA: "/path/to/spatialAPA"
+#### input and output path which include fastqs
+IN_PATH: "/path/to/inputfiles"
+#### bed file containing UTR region (see https://github.com/LuChenLab/SCAPE)
+bed_file: "/path/to/GRCh38_utr.bed"
+#### path of SCAPE tool which should be pre-install(https://github.com/LuChenLab/SCAPE)
+scape_path: "/path/to/SCAPE"
+#### path to project-sample file containing two columns sep by tab(project samplename)
+gse_gsm_list: "/path/to/gse_gsm.txt"
+#scape_preprocess_1: "/public/home/jiangzh/projects/sc_apa/database/scape_preprocess_annot_apa.r"
+#scape_preprocess_2: "/public/home/jiangzh/projects/sc_apa/database/scape_preprocess_add.r"
+#scape_calculate_len: "/public/home/jiangzh/projects/sc_apa/calculate_apa_new.py"
+#scape_rule: "/public/home/jiangzh/projects/sc_apa/run_scape.rule.py"
+stop_codon_file: "/path/to/GRCh38.v44.stop_codon.tsv"
+gtf_file: "/path/to/GRCh38.gtf"
+ensg_symbol: "/path/to/ensg_symbol_type.txt"
+REF_APP: "/path/to/hg38_gencodev44"
+SLIDE: "--unknown-slide visium-1"
+CORE: 128
+MEM: 64
+
+#### specified sample name and image path
+samples:
+  - GSM: sample1
+    image: "/path/to/image1.png"
+    darkimage: null
+    loupe: null
