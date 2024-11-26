@@ -15,7 +15,7 @@ Using the spatialAPA pipeline, we constructed a comprehensive spatially resolved
 </div>
 
 ## Usage of the spatialAPA pipeline
-The [spaceranger](https://www.10xgenomics.com/cn/support/software/space-ranger/latest) and [SCAPE](https://github.com/LuChenLab/SCAPE) tool should be pre-installed before using this pipeline. Other dependancy of environment for running pipeline of spatialAPA are list in environment.yml file. To ensure successful execution of the pipeline, **all configurations and essential parameters should be properly defined in the config.yaml file under snakefile directory.** You can download the [fastqs](https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/084/SRR17375084/) and [image data] for the example sample by clicking the link provided.
+The [spaceranger](https://www.10xgenomics.com/cn/support/software/space-ranger/latest) and [SCAPE](https://github.com/LuChenLab/SCAPE) tool should be pre-installed before using this pipeline. Other dependancy of environment for running pipeline of spatialAPA are list in environment.yml file. To ensure successful execution of the pipeline, **all configurations and essential parameters should be properly defined in the config.yaml file under snakefile directory.** You can download the [fastqs](https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/084/SRR17375084/) and [image data](https://github.com/Omicslab-Zhang/spatialAPA/tree/main/image/tissue_hires_image.png) for the example sample by clicking the link provided.
 ```
 git clone https://github.com/Omicslab-Zhang/spatialAPA.git
 
