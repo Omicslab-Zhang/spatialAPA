@@ -9,24 +9,30 @@ Users can easily run spatialAPA after configuring the required environment for t
 
 Using the spatialAPA pipeline, we constructed a comprehensive spatially resolved atlas of APA, analyzing 804,276 transcriptomic spots from 363 sections, spanning 56 projects, 18 organs, and 76 disease states. The resulting atlas provides unprecedented insights into the spatial dynamics of APA and is available for exploration at [SpatialAPAdb](http://www.biomedical-web.com/spatialAPAdb/home).
 
-![image](https://github.com/Omicslab-Zhang/spatialAPA/blob/main/image/spatialAPA.png)  
-<p align="center">
-  <strong>Figure 1. Workflow of spatialAPAdb.</strong>
-</p>
+<div align="center">
+  <img src="https://github.com/Omicslab-Zhang/spatialAPA/blob/main/image/spatialAPA.png" alt="Figure 1. Workflow of spatialAPAdb">
+  <p><strong>Figure 1. Workflow of spatialAPAdb.</strong></p>
+</div>
 
 ## Usage of the spatialAPA pipeline
 The [spaceranger](https://www.10xgenomics.com/cn/support/software/space-ranger/latest) and [SCAPE](https://github.com/LuChenLab/SCAPE) tool should be pre-installed before using this pipeline. Other dependancy of environment for running pipeline of spatialAPAdb are list in environment.yml file.
 ```
 git clone https://github.com/Omicslab-Zhang/spatialAPA.git
+
 cd spatialAPA
+
 conda env create -f environment.yml
-snakemake -s /path/to/spatialAPA/snakefile/run_spatialAPA.pipeline.py \
+
+snakemake -s /path/to/spatialAPA/snakefile/run_spatialAPA.pipeline.py --configfile /path/to/spatialAPA/snakefile/config.yaml \
   -j 80 -k --scheduler greedy --rerun-incomplete > /path/to/log/file/run_spatialAPA.log 2>&1
 ```
 
 ## Explanation of Key Command-Line Options for Running the Spatial APA Pipeline
 - **-s /path/to/spatialAPA/snakefile/run_spatialAPA.pipeline.py:**  
 Specifies the Snakemake workflow file (Snakefile) containing the rules and steps for the pipeline. Replace /path/to/spatialAPA/snakefile/run_spatialAPA.pipeline.py with the actual file path of your pipeline.
+- **--configfile /path/to/spatialAPA/snakefile/config.yaml**  
+Specifies the YAML configuration file for the pipeline. This file contains all the necessary parameters and settings, such as input and output directories, reference files, computational resources, and other user-defined options.
+By centralizing all these parameters in the config.yaml file, the workflow becomes modular and customizable.
 - **-j 80:**  
 Sets the maximum number of parallel jobs to run. In this example, the pipeline uses up to 80 threads to optimize computational efficiency.
 - **-k:**  
