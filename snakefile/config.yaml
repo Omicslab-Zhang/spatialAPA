@@ -1,7 +1,7 @@
 
 
 #### path of spatialAPA 
-spatialAPA: "/path/to/spatialAPA"
+spatialAPA_path: "/path/to/spatialAPA"
 #### input and output path which include fastqs
 IN_PATH: "/path/to/inputfiles"
 #### bed file containing UTR region (see https://github.com/LuChenLab/SCAPE)
