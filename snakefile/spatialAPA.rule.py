@@ -95,7 +95,7 @@ rule step4:
 
 rule apalength:
     input:
-        tmp_file_1 = config['IN_PATH'] + "/{GSE}/{GSM}/finish_step3.txt",
+        tmp_file_1 = config['IN_PATH'] + "/{GSE}/{GSM}/finish_step4.txt",
     output:
         length_csv = config['IN_PATH'] + "/{GSE}/{GSM}/gene_apa_length_mtx.csv"
     params:
