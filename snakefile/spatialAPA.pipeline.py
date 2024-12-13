@@ -22,7 +22,7 @@ with open(gse_gsm_infile, 'r') as fl:
 IN_PATH = config["IN_PATH"]
 THREADS = 16
 
-include: config["spatialAPA"]/snakefile/spatialAPA.rule.py
+include: config["spatialAPA_path"]/snakefile/spatialAPA.rule.py
 
 # 展平GSE和GSM的组合
 flattened_gse_gsm = [(gse, gsm) for gse in new_dict.keys() for gsm in new_dict[gse]]
