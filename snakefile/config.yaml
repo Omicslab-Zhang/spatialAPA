@@ -18,6 +18,8 @@ gtf_file: "/path/to/GRCh38.gtf"
 ensg_symbol: "/path/to/ensg_symbol_type.txt"
 #### index path for spaceranger
 REF_APP: "/path/to/hg38_gencodev44"
+#### (optional) single cell reference dataset 
+sc_ref: "/path/to/single_cell_reference.rds"
 #### slide serial number (see spaceranger params)
 SLIDE: "--unknown-slide visium-1"
 #### CPU core used for running spaceranger (default 64 CPU cores)
@@ -25,7 +27,7 @@ CORE: 64
 #### memory used for running spaceranger (default 64G)
 MEM: 64
 
-#### specified sample name and image path
+#### specified sample name and image path 
 samples:
   - GSM: sample1
     image: "/path/to/image1.png"
