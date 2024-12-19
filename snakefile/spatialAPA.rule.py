@@ -133,3 +133,24 @@ rule apa_integrate:
         Rscript {params.spatialAPA}/scripts/spatialAPA_APAPSI.r {params.res_path} {params.gse} {params.gsm} > {log} 2>&1 && touch {output.tmp_file_2}
         """
 
+rule spatial_decon:
+    input:
+        tmp_file_2 = config['IN_PATH'] + "/{GSE}/{GSM}/finish_final.txt",
+    output:
+        tmp_file_3 = config['IN_PATH'] + "/{GSE}/{GSM}/finish_decon.txt",
+    params:
+        gse="{GSE}",
+        gsm="{GSM}",
+        ref_dataset=config['sc_ref'],
+        res_path=config['IN_PATH'],
+        spatialAPA=config['spatialAPA_path'],
+    log:
+        config['IN_PATH'] + "/{GSE}/{GSM}_decon.log"
+    shell:
+        """
+        if [ -n "{params.sc_ref}" ]; then
+            Rscript {params.spatialAPA}/scripts/spatialAPA_decon.r {params.gse} {params.gsm} {params.ref_dataset} {params.res_path} > {log} 2>&1 && touch {output.tmp_file_3}
+        else
+            echo "Skipping spatial decon due to missing sc_ref in config."
+        fi
+        """
