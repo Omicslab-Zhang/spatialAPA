@@ -39,4 +39,5 @@ rule all:
         expand(IN_PATH + "/{GSE}/{GSM}/finish_step4.txt", zip, GSE=[gse for gse, gsm in flattened_gse_gsm], GSM=[gsm for gse, gsm in flattened_gse_gsm]),
         expand(IN_PATH + "/{GSE}/{GSM}/gene_apa_length_mtx.csv", zip, GSE=[gse for gse, gsm in flattened_gse_gsm], GSM=[gsm for gse, gsm in flattened_gse_gsm]),
         expand(IN_PATH + "/{GSE}/{GSM}/finish_final.txt", zip, GSE=[gse for gse, gsm in flattened_gse_gsm], GSM=[gsm for gse, gsm in flattened_gse_gsm]),
+        expand(IN_PATH + "/{GSE}/{GSM}/finish_decon.txt", zip, GSE=[gse for gse, gsm in flattened_gse_gsm], GSM=[gsm for gse, gsm in flattened_gse_gsm]) if "sc_ref" in config else []
 
