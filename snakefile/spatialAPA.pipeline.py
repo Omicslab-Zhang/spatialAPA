@@ -22,6 +22,10 @@ with open(gse_gsm_infile, 'r') as fl:
 IN_PATH = config["IN_PATH"]
 THREADS = 16
 
+# 确保 OUT_PATH 以 '/' 结尾
+if not IN_PATH.endswith('/'):
+    IN_PATH += '/'
+
 include: config["spatialAPA_path"]/snakefile/spatialAPA.rule.py
 
 # 展平GSE和GSM的组合
