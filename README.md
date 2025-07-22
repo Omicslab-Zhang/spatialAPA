@@ -45,6 +45,14 @@ Ensures that any interrupted or partially completed jobs from previous runs are 
 Redirects both standard output and error messages from the pipeline execution to a specified log file for debugging and progress tracking. Replace /path/to/log/file/spatialAPA.log with the desired file path for your log file.
 For additional options and detailed instructions, refer to the [Snakemake documentation](https://snakemake.readthedocs.io/en/v7.32.4/) or the pipeline's user guide.
 
+## Merge polyA sites by windows size (default:±25nt)
+```
+python /path/to/script/spatialAPA_merge_pas.py \
+    --sample_info /path/to/sample_info.txt \
+    --window 25 \
+    --outdir /path/to/out_directory
+```
+
 ## Further Information
 To customize or debug the pipeline:
 - Modify config.yaml to set appropriate paths, parameters, and sample-specific details.
