@@ -1,0 +1,4 @@
+GSM4565823	/public/home/scape/GSE144239/GSM4565823/pasite.csv.gz
+GSM4565824	/public/home/scape/GSE144239/GSM4565824/pasite.csv.gz
+GSM4565825	/public/home/scape/GSE144239/GSM4565825/pasite.csv.gz
+GSM4565826	/public/home/scape/GSE144239/GSM4565826/pasite.csv.gz
