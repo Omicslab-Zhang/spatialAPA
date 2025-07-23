@@ -4,6 +4,7 @@ To quantify and integrate spatial APA data with gene expression, we developed a 
 (2) Quantification of APA events and gene expression.
 (3) Calculation of Polyadenylation Site Index (PSI) and Weighted 3' UTR Length (WUL) scores for APA events.
 (4) Downstream analysis: including cluster, spatial variable feature analysis, and GO/KEGG enrichment analysis.
+(5) APA sites correction for single or cross sample analysis.
 
 Users can easily run spatialAPA after configuring the required environment for their raw data ( fastq/fq of 10x visium spatial transcripomics data with attachment slice). The outputs, including APA matrices, PSI, WUL, and gene expression data, are seamlessly integrated into a Seurat object in R. This integration enables downstream spatial transcriptomics analyses using Seurat's extensive toolkit.
 
