@@ -54,9 +54,9 @@ python /path/to/script/spatialAPA_merge_pas.py \
     --window 25 \
     --outdir /path/to/out_directory
 ```
-**--sample_info: Path to the sample info file (required)**
-**--window: Window size for merging APA sites (default: 25)**
-**--outdir: Output directory to save merged APA matrix**
+- **--sample_info: Path to the sample info file (required)**
+- **--window: Window size for merging APA sites (default: 25)**
+- **--outdir: Output directory to save merged APA matrix**
 
 ## Further Information
 To customize or debug the pipeline:
