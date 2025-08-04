@@ -47,12 +47,16 @@ Redirects both standard output and error messages from the pipeline execution to
 For additional options and detailed instructions, refer to the [Snakemake documentation](https://snakemake.readthedocs.io/en/v7.32.4/) or the pipeline's user guide.
 
 ## Merge polyA sites by windows size (default:±25nt)
+This script is used to merge polyA sites from spatial transcriptomics or single-cell APA expression matrices. It helps to normalize genomic coordinates of APA events across different samples or tools by collapsing sites within a ±N nt window (default: ±25 nt). Each APA site should be named using the format: <Gene>-<Chromosome>:<Position>:<Strand>
 ```
 python /path/to/script/spatialAPA_merge_pas.py \
     --sample_info /path/to/sample_info.txt \
     --window 25 \
     --outdir /path/to/out_directory
 ```
+--sample_info: Path to the sample info file (required)
+--window: Window size for merging APA sites (default: 25)
+--outdir: Output directory to save merged APA matrix
 
 ## Further Information
 To customize or debug the pipeline:
