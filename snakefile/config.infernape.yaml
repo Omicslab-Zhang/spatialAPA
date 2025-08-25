@@ -1,0 +1,7 @@
+
+
+### infernape.sig can be downlaod from https://bis.zju.edu.cn/nextcloud/s/apabenchmark_sif/download?path=%2F&files=infernape.sif
+sif_image: "/path/to/infernape.sif" 
+workdir: "/path/to/output_dir"
+##sample_table: path to project-sample file containing two columns sep by tab(project samplename)
+sample_table: "/path/to/gse_gsm.txt" 

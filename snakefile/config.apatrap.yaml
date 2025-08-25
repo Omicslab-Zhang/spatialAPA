@@ -1,0 +1,11 @@
+
+
+
+spatialAPA_path: "/path/to/spatialAPA"
+workdir: "/path/to/output_dir"
+sample_table: "/path/to/gse_gsm.txt" 
+samtools: "/path/to/samtools" 
+umitools: "/path/to/umitools"
+featureCounts: "/path/to/featureCounts" 
+star: "/path/to/star" 
+
