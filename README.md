@@ -58,6 +58,15 @@ python /path/to/script/spatialAPA_merge_pas.py \
 - **--window: Window size for merging APA sites (default: 25)**
 - **--outdir: Output directory to save merged APA matrix**
 
+## Other options of spatialAPA pipeline
+```
+snakemake -s /path/to/spatialAPA/snakefile/SpaialAPA.apatrap.rule.py --configfile /path/to/spatialAPA/snakefile/config.apatrap.yaml \
+  -j 80 -k --scheduler greedy --rerun-incomplete > /path/to/log/file/spatialAPA_apatrap.log 2>&1
+
+snakemake -s /path/to/spatialAPA/snakefile/SpaialAPA.infernape.rule.py --configfile /path/to/spatialAPA/snakefile/config.infernape.yaml \
+  -j 80 -k --scheduler greedy --rerun-incomplete > /path/to/log/file/spatialAPA_infernape.log 2>&1
+```
+
 ## Further Information
 To customize or debug the pipeline:
 - Modify config.yaml to set appropriate paths, parameters, and sample-specific details.
