@@ -11,7 +11,7 @@ Users can easily run spatialAPA after configuring the required environment for t
 Using the spatialAPA pipeline, we constructed a comprehensive spatially resolved atlas of APA, analyzing 804,276 transcriptomic spots from 363 sections, spanning 56 projects, 18 organs, and 76 disease states. The resulting atlas provides unprecedented insights into the spatial dynamics of APA and is available for exploration at [SpatialAPAdb](http://www.biomedical-web.com/spatialAPAdb/home).
 
 <div align="center">
-  <img src="https://github.com/Omicslab-Zhang/spatialAPA/blob/main/image/figure1.tif" alt="Figure 1. Workflow of spatialAPAdb">
+  <img src="https://github.com/Omicslab-Zhang/spatialAPA/blob/main/image/figure1.png" alt="Figure 1. Workflow of spatialAPAdb">
   <p><strong>Figure 1. Workflow of spatialAPA.</strong></p>
 </div>
 
